@@ -4,6 +4,6 @@ this is a music player
  - [x] make to a do list
  - [x] create repo folders
  - [ ] bring music
- - [ ] bring old music player
+ - [ ] reprogram old music player or code new music player
  - [ ] case study
  - [ ] TBA
