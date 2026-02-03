@@ -7,15 +7,16 @@ import ddf.minim.ugens.*;
 
 Minium minium;
 
-Minium= new Minium(this)
+Minium= new Minium(this);
 AudioPlayer SoundEffect1;
 AudioPlayer playerlist1;
 
 String extension=" .mp3";
 String pathway="Audio/soundfile/";
 
-Void KeyPressed(){
-if ( key=='P'||key=='q')
+void keyPressed(){
+
+  if ( key=='P'||key=='q')
 {
 
 }
