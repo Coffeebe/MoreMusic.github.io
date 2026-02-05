@@ -5,20 +5,43 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
-Minium minium;
+import ddf.minim.*;
 
-Minium= new Minium(this);
-AudioPlayer SoundEffect1;
-AudioPlayer playerlist1;
+Minim minim;
+AudioPlayer song;
 
-String extension=" .mp3";
-String pathway="Audio/soundfile/";
-
-void keyPressed(){
-
-  if ( key=='P'||key=='q')
-{
-
+void setup() {
+  size(400, 200);
+  
+  minim = new Minim(this);
+  song = minim.loadFile("../music/..mp3"); 
 }
 
+void draw() {
+  background(30);
+  fill(255);
+  textAlign(CENTER, CENTER);
+  textSize(16);
+  
+  text("Press P to Play / Pause\nPress R to Rewind", width/2, height/2);
+}
+
+void keyPressed() {
+  if (key == 'p' || key == 'P') {
+    if (song.isPlaying()) {
+      song.pause();
+    } else {
+      song.play();
+    }
+  }
+  
+  if (key == 'r' || key == 'R') {
+    song.rewind();
+  }
+}
+
+void stop() {
+  song.close();
+  minim.stop();
+  super.stop();
 }
