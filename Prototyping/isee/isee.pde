@@ -6,7 +6,6 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
 import ddf.minim.*;
-
 Minim minim;
 AudioPlayer song;
 
@@ -14,7 +13,7 @@ void setup() {
   size(400, 200);
   
   minim = new Minim(this);
-  song = minim.loadFile("../music/..mp3"); 
+  song = minim.loadFile("Dependancies_Music_ping-pong-classic-arcade-game-116818.mp3"); 
 }
 
 void draw() {
