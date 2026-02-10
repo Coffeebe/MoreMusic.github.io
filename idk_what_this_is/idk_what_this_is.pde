@@ -2,12 +2,16 @@
 */
 //libraries
 // classes -object
+musicplay musicplay;
 //
 //global variables
-void settings() {}//end 
+//void settings() {}//end 
 //note canvas based on display, see intermedate
 //
-void setup() {}//end
+void setup() {
+  fullScreen();
+  musicplay.helloWorld();
+}//end
 //
 void draw() {}//end
 //
