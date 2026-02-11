@@ -24,6 +24,20 @@ class musicplay{
   void divarray(){
     //end For( int i=0 i<divs.length; i++){}
     //div[0]= ;
+    //div[1]= ;
+    //div[2]= ;
+    //div[3]= ;
+    //div[4]= ;
+    //div[5]= ;
+    //div[6]= ;
+    //div[7]= ;
+    //div[8]= ;
+    //div[9]= ;
+    //div[10]= ;
+    //div[11]= ;
+    //div[12]= ;
+    //div[13]= ;
+    //div[14]= ;
   }
   //getters
   //
