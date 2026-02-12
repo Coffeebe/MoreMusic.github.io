@@ -10,7 +10,7 @@ musicplay musicplay;
 //
 void setup() {
   fullScreen();
-  musicplay = new musicplay ();
+  musicplay = new musicplay();
   musicplay.helloWorld();
   musicplay.draw();
   musicplay.errorStatment("hello world");
