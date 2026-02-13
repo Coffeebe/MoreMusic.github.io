@@ -1,13 +1,13 @@
 class musicplay{
   //
   //global variables
-  float[] divs;
+  float[] div;
   //
   //contructor a nd mutiple construtor( diff parameters)
   musicplay(){}
  //end
  musicplay(int numberofrect){
- this.divs = new float[numberofrect*4];
+ this.div = new float[numberofrect*4];
  }
   //
   //music(X int){}
@@ -23,7 +23,7 @@ class musicplay{
   //
   void divarray(){
     //end For( int i=0 i<divs.length; i++){}
-    //div[0]= ;
+     //div[0]= ;
     //div[1]= ;
     //div[2]= ;
     //div[3]= ;
@@ -88,7 +88,9 @@ class musicplay{
     //div[62]= ;
     //div[63]= ;
     //div[64]= ;      
+    //for( int i=0;div.length;i++){ };
   }
+  
   //getters
   //
   //setters
