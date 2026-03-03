@@ -85,21 +85,20 @@ class musicplay{
     //div[58]= ;
     //div[59]= ;
     //div[60]= ;
-    div[61]= displayWidth*70/ 276;
-    div[62]= displayHeight*54/226;
-    div[63]= displayWidth*134/276;
-   div[64]= displayHeight*70/226;      
+    //div[61]= ;
+    //div[62]= ;
+    //div[63]= ;
+   //div[64]= ;      
     for( int i=0; i < div.length;i++){
-      div[i]= 50 + i * 5;
-      div[i+1]= 300;
-      div[i+2]= 30;
-      div[i+3] = random(50,150);
+      div[i]= ;
+      div[i+1]= ;
+      div[i+2]= ;
+      div[i+3] = ;
     }
   }
   
   //getters
-  //
-  //setters
+  //  //setters
   //
   //output - println
   void helloWorld()
