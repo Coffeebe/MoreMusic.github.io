@@ -13,6 +13,7 @@ prefernces  saves  all/some
 */
 //libaries - minium
 //
+
 // Global vaqirables
 int AppWidth, AppHeight;
 //
