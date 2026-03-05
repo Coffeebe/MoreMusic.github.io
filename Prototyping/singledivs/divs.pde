@@ -10,11 +10,11 @@ void div() {
   float paperheight = 226;
   div[0] = AppWidth *70 / paperwidth;
   div[1] = AppHeight *50/ paperheight;
-  div[2] = AppWidth * 70/ paperwidth;
+  div[2] = AppWidth * 69/ paperwidth;
   div[3] = AppHeight * 120/paperheight;
   
   div[4] = AppWidth * 114/paperheight;
-  div[5] = AppHeight * 1/paperwidth;
+  div[5] = AppHeight * 61/paperwidth;
   div[6] = AppWidth * 25/paperheight;
   div[7] = AppHeight * 100/paperwidth;
   //div[] = AppWidth * /paperheight;
