@@ -10,16 +10,19 @@ musicplay musicplay;
 //
 void setup() {
   fullScreen();
-  musicplay = new musicplay(4);//number of rect
+  musicplay = new musicplay(16);//number of rect
   musicplay.helloWorld();
   musicplay.draw();
   musicplay.errorStatment("hello world");
 }//end
 //
-void draw() {}//end
+void draw() {
+}//end
 //
-void keyPressed() {}//end
+void keyPressed() {
+}//end
 //
-void mousePressed(){}//end
+void mousePressed(){
+}//end
 //
 //end driver

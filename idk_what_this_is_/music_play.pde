@@ -21,6 +21,12 @@ class musicplay{
   void rect(float x,float y, float w, float h){
     rect(x,y,w,h);
   }
+  void seeMusicGUI() {
+  int j=0;
+  rect(div[j], div[j+1], div[j+2], div[j+3]);
+  for ( j=12; j<div.length; j+=4 ) {
+    rect(div[j], div[j+1], div[j+2], div[j+3]);
+  }}
   //
   void divarray(){
     //end For( int i=0 i<divs.length; i++){}
@@ -90,14 +96,15 @@ class musicplay{
     //div[63]= ;
    //div[64]= ;      
     for( int i=0; i < div.length;i++){
-      div[i]= ;
-      div[i+1]= ;
-      div[i+2]= ;
-      div[i+3] = ;
+      //div[i]= ;
+      //div[i+1]= ;
+      //div[i+2]= ;
+      //div[i+3] = ;
     }
   }
-  
+
   //getters
+  
   //  //setters
   //
   //output - println
