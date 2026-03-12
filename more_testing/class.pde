@@ -1,16 +1,11 @@
- class rect {
-   float A;
-   float B;
-   float C;
-   float D;
-  void Rectangle( float apos,float bpos,float cwid, float dhei){
-    A=a;
-    B=b;
-    C=c;
-    D=d;
-  }
- 
+ class recte {
+   float A,B,C,D;
    
+ recte( float apos,float bpos,float cwid, float dhei){
+    A= apos;
+    B= bpos;
+    C= cwid;
+    D= dhei;
  
  }
  
