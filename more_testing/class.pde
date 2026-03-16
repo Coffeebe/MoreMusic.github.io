@@ -13,3 +13,8 @@
  rect(A,B,C,D);
  }
    }
+   void buttondisplay(){
+   }
+   void musicbuttons(){
+     
+   }
