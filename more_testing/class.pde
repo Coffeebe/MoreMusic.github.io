@@ -13,7 +13,9 @@
  rect(A,B,C,D);
  }
    }
-   void buttondisplay(){
+   void buttondisplay(float apos,float bpos,float cwid,float dhei){
+ 
+     
    }
    void musicbuttons(){
      
