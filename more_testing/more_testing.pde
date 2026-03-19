@@ -1,4 +1,5 @@
    recte[] r;
+   musicbutton[] musicbu;
  //recte r;
  //recte r2;
  //recte r3;
@@ -10,6 +11,8 @@
    r[2] = new recte(370,250,1200,800);
    r[3] = new recte(400,300,1140,700);
    r[4] = new recte(400,900,100,100);
+   //
+   musicbu = new musicbutton(500,500,600,600);
    //or (int i = 0; i < recte.length; i++) {
    //r[i] = new recte(i * 60 + 20, 150, 50, 40);}
  }

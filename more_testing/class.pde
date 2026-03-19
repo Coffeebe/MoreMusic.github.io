@@ -1,9 +1,9 @@
  class recte {
    float A,B,C,D;
    
- recte( float apos,float bpos,float cwid, float dhei){
-    A= apos;
-    B= bpos;
+ recte( float aposX,float bposY,float cwid, float dhei){
+    A= aposX;
+    B= bposY;
     C= cwid;
     D= dhei;
  
@@ -13,8 +13,8 @@
  rect(A,B,C,D);
  }
    }
-   void buttondisplay(float apos,float bpos,float cwid,float dhei){
- 
+   void buttondisplay(){
+ rect(A,B,C,D);
      
    }
    void musicbuttons(){
