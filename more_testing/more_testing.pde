@@ -12,7 +12,7 @@
    r[3] = new recte(400,300,1140,700);
    r[4] = new recte(400,900,100,100);
    //
-   musicbu = new musicbutton(500,500,600,600);
+   musicbu[0]= new musicbutton(500,500,600,600);
    //or (int i = 0; i < recte.length; i++) {
    //r[i] = new recte(i * 60 + 20, 150, 50, 40);}
  }
@@ -20,6 +20,7 @@
  void draw(){
    for (int i = 0; i < r.length; i++) {
     r[i].display();
+    musicbu[0].buttomdisplay();
 }
   // r.display();
    
