@@ -13,7 +13,12 @@ class musicbutton {
     
     
   }
-  void triangle(){}
+  void triangle(){
+    triangle(
+    A+C*0.3,B+D*0.8,
+    A+C*0.3,B+D*0.4,
+    A+C*0.8,B+D*0.5);
+  }
   
   
   void pausethings(){}
