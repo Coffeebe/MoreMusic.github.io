@@ -1,6 +1,6 @@
 class musicbutton {
   float A, B, C, D;
- boolean isplaying = false;
+ boolean isPlaying = false;
 
   musicbutton(float aposX,float bposY, float cwid, float dhei) {
     A = aposX;
@@ -11,15 +11,28 @@ class musicbutton {
   void buttomdisplay(){
     rect(A,B,C,D);
     
+    if(isPlaying){pausethings();
+    }
+    else { triangl();
+    }
     
   }
-  void triangle(){
+  void triangl(){
     triangle(
-    A+C*0.3,B+D*0.8,
-    A+C*0.3,B+D*0.4,
-    A+C*0.8,B+D*0.5);
+    A+C*0.2,B+D*0.1,
+    A+C*0.2,B+D*0.9,
+    A+C*0.9,B+D*0.8);
   }
   
   
-  void pausethings(){}
+  void pausethings(){
+    rect(200,200,200,200);
+    rect(200+200,200+200,200+200,200+200);
+    
+    
+  }
+  
+  void play(){
+    isPlaying = !isPlaying;
+  }
 }
