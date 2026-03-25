@@ -21,11 +21,25 @@
  void draw(){
    for (int i = 0; i < r.length; i++) {
     r[i].display();
-    musicbu[0].buttomdisplay();
 }
   // r.display();
-   
+       musicbu[0].buttomdisplay();
+
  }
+ void mousePressed(){
+  if(musicbu[0].isMouseOver()){
+    musicbu[0].play();
+  }
+}
+ 
+ 
+/* void mousePressed(){
+  if(mouseX > musicbu[0].A && mouseX < musicbu[0].A + musicbu[0].C &&
+     mouseY > musicbu[0].B && mouseY < musicbu[0].B + musicbu[0].D){
+    musicbu[0].play();  // ← THIS triggers the toggle
+  }*/
+  
+
  //end
  
  //java.io libary

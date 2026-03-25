@@ -1,6 +1,10 @@
 class musicbutton {
   float A, B, C, D;
  boolean isPlaying = false;
+ boolean isMouseOver(){
+  return mouseX > A && mouseX < A + C &&
+         mouseY > B && mouseY < B + D;
+}
 
   musicbutton(float aposX,float bposY, float cwid, float dhei) {
     A = aposX;
@@ -17,17 +21,18 @@ class musicbutton {
     }
     
   }
-  void triangl(){
+  void triangl(){ 
+    
     triangle(
-    A+C*0.2,B+D*0.1,
-    A+C*0.2,B+D*0.9,
-    A+C*0.9,B+D*0.8);
+    A+C*0.35,B+D*0.25,
+    A+C*0.35,B+D*0.75,
+    A+C*0.7,B+D*0.5);
   }
   
   
   void pausethings(){
-    rect(200,200,200,200);
     rect(200+200,200+200,200+200,200+200);
+    rect(200+200,200+200,200+200,200+200,200+200);
     
     
   }
@@ -35,4 +40,6 @@ class musicbutton {
   void play(){
     isPlaying = !isPlaying;
   }
+
+  
 }
