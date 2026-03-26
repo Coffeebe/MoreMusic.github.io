@@ -19,8 +19,11 @@
  }
  //end
  void draw(){
-   for (int i = 0; i < r.length; i++) {
-    r[i].display();
+   //for (int i = 0; i < r.length; i++) {
+    //r[i].display();
+//}
+for( recte R : r){
+  R.display();
 }
   // r.display();
        musicbu[0].buttomdisplay();
@@ -31,7 +34,11 @@
     musicbu[0].play();
   }
 }
- 
+ /*for(musicbutton b : musicbu){
+  if(b.isMouseOver()){
+    b.play();
+  }
+}*/
  
 /* void mousePressed(){
   if(mouseX > musicbu[0].A && mouseX < musicbu[0].A + musicbu[0].C &&

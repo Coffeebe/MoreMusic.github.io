@@ -36,6 +36,13 @@ class musicbutton {
     
     
   }
+  /*void pausethings(){  
+  float barWidth = C * 0.15;  
+  float gap = C * 0.1;  
+    
+  rect(A + C * 0.3, B + D * 0.25, barWidth, D * 0.5);  
+  rect(A + C * 0.3 + barWidth + gap, B + D * 0.25, barWidth, D * 0.5);  
+}*/
   
   void play(){
     isPlaying = !isPlaying;
