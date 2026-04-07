@@ -12,8 +12,9 @@
    r[3] = new recte(400,300,1140,700);
    r[4] = new recte(400,900,100,100);
    //
-   musicbu = new musicbutton[1];
-   musicbu[0]= new musicbutton(500,500,600,600);
+   musicbu = new musicbutton[2];
+   musicbu[0]= new musicbutton(500,900,100,100);
+   musicbu[1]= new musicbutton(600,900,100,100);
    //or (int i = 0; i < recte.length; i++) {
    //r[i] = new recte(i * 60 + 20, 150, 50, 40);}
  }
@@ -27,13 +28,18 @@ for( recte R : r){
 }
   // r.display();
        musicbu[0].buttomdisplay();
-
+       musicbu[1].H();
  }
  void mousePressed(){
-  if(musicbu[0].isMouseOver()){
-    musicbu[0].play();
-  }
-}
+   for (int i=0; i < musicbu.length;i++) {
+     if (musicbu[i].isMouseOver()){
+       musicbu[i].play();}}
+     }
+   
+  //if(musicbu[0].isMouseOver()){
+   // musicbu[0].play();
+  
+
  /*for(musicbutton b : musicbu){
   if(b.isMouseOver()){
     b.play();

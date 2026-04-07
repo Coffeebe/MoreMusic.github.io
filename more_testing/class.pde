@@ -6,17 +6,18 @@
     B= bposY;
     C= cwid;
     D= dhei;
- 
+
  }
- 
  void display(){
  rect(A,B,C,D);
  }
-   }
+ 
+   
    void buttondisplay(){
- //rect(A,B,C,D);
+  rect(A,B,C,D);
      
    }
    void musicbuttons(){
      
    }
+ }
