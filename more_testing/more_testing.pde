@@ -12,7 +12,8 @@
    r[3] = new recte(400,300,1140,700);
    r[4] = new recte(400,900,100,100);
    //
-   musicbu = new musicbutton[2];
+   //currently testing
+   musicbu = new musicbutton[2]; 
    musicbu[0]= new musicbutton(500,900,100,100);
    musicbu[1]= new musicbutton(600,900,100,100);
    //or (int i = 0; i < recte.length; i++) {
@@ -23,12 +24,12 @@
    //for (int i = 0; i < r.length; i++) {
     //r[i].display();
 //}
-for( recte R : r){
+ for( recte R : r){
   R.display();
 }
   // r.display();
        musicbu[0].buttomdisplay();
-       musicbu[1].H();
+       musicbu[1].skip();
  }
  void mousePressed(){
    for (int i=0; i < musicbu.length;i++) {

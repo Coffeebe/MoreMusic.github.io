@@ -20,11 +20,26 @@ class musicbutton {
     else { triangl();
     } 
   }
-  void H(){ 
+  void skip(){ 
     rect(A,B,C,D);
-    rect(A+D*0.30,B+C*0.01,C+0.1,D+0.5);
+    
+    triangle(
+    A+C*0.30,B+D*0.25,
+    A+C*0.30,B+D*0.75,
+    A+C*0.6,B+C*0.5
+    );
+     
+    triangle(
+    A+C*0.5,B+D*0.25,
+    A+C*0.5,B+D*0.75,
+    A+C*0.75,B+D*0.5
+    );
+  }
+  void back(){
+    rect(A,B,C,D);
     
   }
+  
   void triangl(){ 
     
     triangle(
