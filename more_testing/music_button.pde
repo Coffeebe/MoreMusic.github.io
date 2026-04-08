@@ -20,6 +20,10 @@ class musicbutton {
     else { triangl();
     } 
   }
+  void hi(){
+    
+  }
+  
   void skip(){ 
     rect(A,B,C,D);
     
@@ -37,9 +41,19 @@ class musicbutton {
   }
   void back(){
     rect(A,B,C,D);
+ triangle(
+ A+C*0.40,B+D*0.5,
+ A+C*0.7,B+C*0.75,
+ A+C*07,B+C*0.25
+    );
     
+triangle(
+A+C*0.25,B+D*0.5,
+A+C*0.5,B+D*0.75,
+A+C*0.5,B+D*0.25
+);    
+
   }
-  
   void triangl(){ 
     
     triangle(
