@@ -25,6 +25,14 @@ class musicbutton {
     case 1:
     skip();
     break;
+    
+    case 2:
+    back();
+    break;
+    
+    case 3:
+    //hi
+    break;
     } 
   }
   void hi(){
@@ -37,7 +45,7 @@ class musicbutton {
     triangle(
     A+C*0.30,B+D*0.25,
     A+C*0.30,B+D*0.75,
-    A+C*0.6,B+C*0.5
+    A+C*0.6,B+D*0.5
     );
      
     triangle(
@@ -82,6 +90,4 @@ A+C*0.5,B+D*0.25
   void play(){
     isPlaying = !isPlaying;
   }
-
-  
 }
