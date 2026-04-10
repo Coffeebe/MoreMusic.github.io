@@ -6,7 +6,6 @@
     B= bposY;
     C= cwid;
     D= dhei;
-
  }
  void display(){
  rect(A,B,C,D);
