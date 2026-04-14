@@ -57,14 +57,18 @@
     if(b.Type == 0 ){
     b.play();
     } else if (b.Type == 1){
-      
-    }  
-   }else if (b.Type == 2){
-     
+      print("coffee");
+    }
+    else if (b.Type == 2){
+   print("tea");
+  }
+  else if(b.Type == 3){
+    
+  }
+  }
+  }
   }
   
-}
-  }
 /* void mousePressed(){
   if(mouseX > musicbu[0].A && mouseX < musicbu[0].A + musicbu[0].C &&
      mouseY > musicbu[0].B && mouseY < musicbu[0].B + musicbu[0].D){
