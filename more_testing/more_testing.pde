@@ -31,10 +31,14 @@
   R.display();
 }
   // r.display();
-       musicbu[0].buttomdisplay();
+  for(musicbutton buttom : musicbu){
+    buttom.buttomdisplay();
+  }
+      /* musicbu[0].buttomdisplay();
        musicbu[1].buttomdisplay();
        musicbu[2].buttomdisplay();
        musicbu[3].buttomdisplay();
+       */
        //musicbu[1].skip();
       // musicbu[2].back();
  }
@@ -50,10 +54,17 @@
 
  for(musicbutton b : musicbu){
   if(b.isMouseOver()){
+    if(b.Type == 0 ){
     b.play();
+    } else if (b.Type == 1){
+      
+    }  
+   }else if (b.Type == 2){
+     
   }
+  
 }
- 
+  }
 /* void mousePressed(){
   if(mouseX > musicbu[0].A && mouseX < musicbu[0].A + musicbu[0].C &&
      mouseY > musicbu[0].B && mouseY < musicbu[0].B + musicbu[0].D){
