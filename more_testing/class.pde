@@ -12,10 +12,10 @@
  }
  
    
-   void buttondisplay(){
+  /* void buttondisplay(){
   rect(A,B,C,D);
      
-   }
+   }*/
    void musicbuttons(){
      
    }
