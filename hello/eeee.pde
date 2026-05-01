@@ -1,4 +1,4 @@
- class recte {
+class recte {
    float A,B,C,D;
    
  recte( float aposX,float bposY,float cwid, float dhei){

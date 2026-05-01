@@ -1,5 +1,4 @@
-
-   recte[] r;
+recte[] r;
    musicbutton[] musicbu;
    //Newerplay[] newerplay;
   // Song song;
@@ -86,7 +85,7 @@
   
   }
   }
-  }
+  
   
 /* void mousePressed(){
   if(mouseX > musicbu[0].A && mouseX < musicbu[0].A + musicbu[0].C &&
