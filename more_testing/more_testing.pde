@@ -1,15 +1,54 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
 
+   Newerplay button;
+   AudioPlayer p;
    recte[] r;
    musicbutton[] musicbu;
-   //Newerplay[] newerplay;
-  // Song song;
+   Minim minim;
+   PImage cover;
+//Newerplay[] newerplay;
+  song Songu;
+  songbox mybox;
  //recte r;
  //recte r2;
  //recte r3;
  void setup(){
    fullScreen();
-   //minim = new Minim(this);
-  // AudioPlayer p =minm.loadfile();
+//    minim = new Minim(this);
+//  p = minim.loadFile("song.mp3");
+  //
+//  if (p == null) {
+//  println("Audio file failed to load!");
+ /* return;
+}
+  //
+  AudioMetaData meta = p.getMetaData();  
+  
+if (meta == null) {
+  println("No metadata found, using defaults");
+}
+    //
+    String title = meta.title();
+if (title == null || title.equals("")) title = "Unknown Title";
+
+String artist = meta.author();
+if (artist == null || artist.equals("")) artist = "Unknown Artist";
+
+String album = meta.album();
+if (album == null || album.equals("")) album = "Unknown Album";
+
+Songu = new song(title, artist, album, p);*/
+    //
+  //cover = loadImage("cover.jpg");
+  //song = new Song("
+  //mybox = new songbox(50,50,150,180,Songu,cover);
+  //button = new Newerplay(220,100,80,80,Songu);
+  //
     r = new recte[5];
    r[0] = new recte(1769,0,150,100);
    r[1]= new recte( 0,1099,150,100);
@@ -23,7 +62,8 @@
    musicbu[1]= new musicbutton(600,900,100,100,1);
    musicbu[2]= new musicbutton(700,900,100,100,2);
    musicbu[3]= new musicbutton(800,900,100,100,3);
-   
+   //
+   //button = new Newerplay(500,300,300,300,song);
    //newerplay = new Newerplay[1];
   //Newerplay newerplay ;
   // newerplay[0]= new Newerplay(900,900,100,100,0);
@@ -33,9 +73,11 @@
  //end
  void draw(){
    //for (int i = 0; i < r.length; i++) {
-    //r[i].display();
+   // r[i].display();
 //}
 //
+//mybox.display();
+//button.display();
 //
  for( recte R : r){
   R.display();
@@ -68,8 +110,11 @@
   //for(Newerplay b : newerplay ){
   //  if(b.isMouseOver()){
     //  b.playing();// put song.player; there later}
-  
-  
+  //
+//if (button.isMouseOver()){
+ //   button.playing();
+//}
+  //
  for(musicbutton b : musicbu){
   if(b.isMouseOver()){
     if(b.Type == 0 ){
@@ -86,8 +131,16 @@
   
   }
   }
-  }
+//  if (button.isMouseOver()) {
+//  button.playing();}
   
+  }
+ 
+ 
+ // if (button.isMouseOver()) {
+  //button.playing();}
+  
+   
 /* void mousePressed(){
   if(mouseX > musicbu[0].A && mouseX < musicbu[0].A + musicbu[0].C &&
      mouseY > musicbu[0].B && mouseY < musicbu[0].B + musicbu[0].D){
