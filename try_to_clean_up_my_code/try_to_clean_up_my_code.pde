@@ -10,10 +10,15 @@ Minim minim;
 AudioPlayer[] playlist;
 int currentsong = 0;
 rect[] r;
+//
+//buttons
 Newerplay button;
 restart restartbutton;
 next Next;
 prev Prev;
+//
+//
+songtitle songthing;
 //
 int appwidth,appheight;
 
@@ -42,10 +47,15 @@ playlist[3]= minim.loadFile("Alohaii - Lovesick Loop (feat. Kiyon) [MV] - (320 K
  restartbutton = new restart(appwidth*0.20,appheight*0.70,100,100);//restart song
  Next = new next(appwidth*0.25,appheight*0.70,100,100);// next
  Prev = new prev(appwidth*0.30,appheight*0.70,100,100);
+ //
+ songthing = new songtitle(appwidth*0.4,appheight*0.3,900,100);
+ 
 }
 //
 void draw(){
-
+  background(200);
+//println(playlist[currentsong].getMetaData().title());
+println(playlist[currentsong].getMetaData().author());
 //r.display();
   
 for(int i = 0; i < r.length; i++){
@@ -58,6 +68,9 @@ button.display();
 restartbutton.display();
 Next.display();
 Prev.display();
+//
+songthing.display();
+//
 }
 //
 void mousePressed(){

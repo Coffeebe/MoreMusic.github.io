@@ -29,8 +29,8 @@ class Newerplay extends normalbuttons {
 
   @Override
   void display() {
+    fill(255);
     rect(A, B, C, D);
-
     if (isPlaying) {
       pausethings();
     } else {
@@ -79,11 +79,49 @@ class restart extends normalbuttons {
     
   }
 void display(){
+  fill(255);
   rect(A,B,C,D);
+  restartthing();
   // try to code retart icon
+  
 }
 void restartthing(){
 //there
+
+  float cx = A + C/2;
+  float cy = B + D/2;
+  float r = min(C, D) * 0.35;
+
+  //noFill();
+  //stroke(0);
+  //strokeWeight(3);
+
+  
+  
+  arc(cx, cy, r*2, r*2, radians(40), radians(320));
+
+
+
+
+  triangle(
+    cx + r * cos(radians(80)),
+    cy + r * sin(radians(80)),
+
+    cx + r * cos(radians(50)),
+    cy + r * sin(radians(50)),
+
+    cx + r * cos(radians(60)),
+    cy + r * sin(radians(60))
+  );
+
+ /* triangle(
+    A + C*0.7, B + D*0.25,
+    A + C*0.85, B + D*0.25,
+    A + C*0.78, B + D*0.4
+  );
+  */
+
+    
 }
 
 void mousePressed() { // not in use
@@ -106,6 +144,7 @@ class next extends normalbuttons{
     
   }
   void display(){
+    fill(255);
   rect(A,B,C,D);
   nextshape();
   }
@@ -141,6 +180,7 @@ class prev extends normalbuttons{
     
   }
   void display(){
+    fill(255);
   rect(A,B,C,D);
   prevshape();
   }

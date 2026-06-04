@@ -9,6 +9,7 @@ class rect{
     D= dhei;
  }
  void display(){
+   fill(255);
  rect(A,B,C,D);
  }
 
