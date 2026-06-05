@@ -15,7 +15,7 @@
    
    
 void display(){
-  //rect(A,B,C,D);
+  rect(A,B,C,D);
 AudioMetaData meta = playlist[currentsong].getMetaData();
 
 String title = meta.title();
@@ -28,10 +28,10 @@ String artist = meta.author();
   artist = "Unknown Artist";
 }
 
-//textAlign(LEFT, TOP);
-textSize(20);
+textAlign(LEFT, TOP);
+textSize(25);
 fill(0,0,0);
-text("Hello: "+title,A,B,C,B);
+text("title: "+title,A+20,B+20,C-20,D-20);
 
 //text(artist,A*30,B+50);
 }

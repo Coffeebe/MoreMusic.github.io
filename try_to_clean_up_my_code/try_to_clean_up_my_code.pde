@@ -4,6 +4,7 @@ import ddf.minim.effects.*;
 import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
+//import com.mpatric.mp3agic.*;
 
 Minim minim;
 //AudioPlayer song;
@@ -37,10 +38,10 @@ playlist[1] = minim.loadFile("GODDESS OF VICTORY_ NIKKE _ OVER THE HORIZON Story
 playlist[2] = minim.loadFile("Ga1ahad and Scientific Witchery - Mili _ Covered by Miori Celesta & Chikafuji Lisa - (320 Kbps).mp3");
 playlist[3]= minim.loadFile("Alohaii - Lovesick Loop (feat. Kiyon) [MV] - (320 Kbps).mp3");
 //
-  r = new rect[3];
-  r[0] = new rect(200,100,100,100);
-  r[1] = new rect(200,200,appwidth*0.80,appheight*0.70);
-  r[2] = new rect(appwidth*0.15,appheight*0.70,100,100);
+  r = new rect[2];
+ // r[0] = new rect(200,100,100,100);
+  r[0] = new rect(200,200,appwidth*0.80,appheight*0.70);
+  r[1] = new rect(appwidth*0.15,appheight*0.70,100,100);
  // r = new rect(100,100,100,100);
  //
  button = new Newerplay(appwidth*0.15,appheight*0.70,100,100);//play/pause
@@ -48,7 +49,7 @@ playlist[3]= minim.loadFile("Alohaii - Lovesick Loop (feat. Kiyon) [MV] - (320 K
  Next = new next(appwidth*0.25,appheight*0.70,100,100);// next
  Prev = new prev(appwidth*0.30,appheight*0.70,100,100);
  //
- songthing = new songtitle(appwidth*0.4,appheight*0.3,900,100);
+ songthing = new songtitle(200,100,900,100);
  
 }
 //
