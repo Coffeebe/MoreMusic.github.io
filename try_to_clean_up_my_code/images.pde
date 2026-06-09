@@ -1,5 +1,5 @@
 class image{
-// mp3agic is weird
+// mp3agic is not working
   float A,B,C,D;
  image(float aposX,float bposY,float cwid,float dhei){
     A= aposX;
