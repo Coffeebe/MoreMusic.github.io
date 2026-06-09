@@ -4,13 +4,14 @@ import ddf.minim.effects.*;
 import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
-//import com.mpatric.mp3agic.*;
+import com.mpatric.mp3agic.*;
 
 Minim minim;
 //AudioPlayer song;
 AudioPlayer[] playlist;
 int currentsong = 0;
 rect[] r;
+PImage[] albumArts;
 //
 //buttons
 Newerplay button;
