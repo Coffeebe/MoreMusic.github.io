@@ -35,6 +35,4 @@ text("title: "+title,A+20,B+20,C-20,D-20);
 
 //text(artist,A*30,B+50);
 }
-
-
-}
+ }
